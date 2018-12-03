@@ -11,6 +11,8 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     s3cmd=1.1.* \
  && rm -rf /var/lib/apt/lists/*
+ 
+ RUN pip3 install mysql-connector
 
 FROM python:3
 
