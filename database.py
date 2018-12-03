@@ -2,12 +2,14 @@
 
 import mysql.connector
 
-mydb = mysql.connector.connect(
-  host="localhost",
-  user="admin",
-  passwd="password"
-)
+while True: 
 
-mycursor = mydb.cursor()
+  mydb = mysql.connector.connect(
+    host="localhost",
+    user="admin",
+    passwd="password"
+  )
 
-mycursor.execute("CREATE DATABASE mydatabase")
+  mycursor = mydb.cursor()
+
+  mycursor.execute("CREATE DATABASE mydatabase")
