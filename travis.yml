@@ -10,6 +10,14 @@ python:
   - "3.6"
   # PyPy versions
   - "pypy3.5"
+
+# set up docker container 
+before_install:
+- docker pull carlad/sinatra
+- docker run -d -p 127.0.0.1:80:4567 carlad/sinatra /bin/sh -c "cd /root/sinatra; bundle exec foreman start;"
+- docker ps -a
+- docker run 
+
 # command to install dependencies
 install:
   - pip install -r requirements.txt
