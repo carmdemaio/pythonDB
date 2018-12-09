@@ -14,7 +14,7 @@ python:
 
 # set up docker container 
 before_install:
-- docker build https://github.com/rividz/pythondb
+- docker build github.com/rividz/pythondb
 
 # command to install dependencies
 install:
