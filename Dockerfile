@@ -5,8 +5,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     dpkg-sig \
     mercurial \
-    python3.6 \ 
-    python3-pip \
+    python3.6 python3-pip \
     s3cmd=1.1.* \
  && rm -rf /var/lib/apt/lists/*
  
