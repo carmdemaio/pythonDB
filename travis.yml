@@ -3,6 +3,15 @@ services:
 
 language: python
 
+python:
+  - "2.7"
+  - "3.4"
+  - "3.5"
+  - "3.6"
+  # PyPy versions
+  - "pypy3.5"
+
+
 # set up docker container 
 before_install:
 - docker build https://github.com/rividz/pythondb
