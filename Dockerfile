@@ -1,8 +1,3 @@
-FROM apt-get
-
-RUN curl
-RUN pip3 install mysql-connector
-
 FROM python:3
 
 ADD helloWorld.py /
