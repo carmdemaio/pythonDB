@@ -1,10 +1,10 @@
 FROM python:3
 
-RUN pip install --upgrade pip && \
-    pip install --no-cache-dir nibabel pydicom matplotlib pillow && \
-    pip install --no-cache-dir med2image
-    pip install mysql-connector-python-rf
-    pip install mysql-connector
+RUN pip install --upgrade pip
+RUN pip install --no-cache-dir nibabel pydicom matplotlib pillow
+RUN pip install --no-cache-dir med2image
+RUN pip install mysql-connector-python-rf
+RUN pip install mysql-connector
 
 CMD ["cat", "/etc/os-release"]
 
