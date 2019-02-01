@@ -1,0 +1,2 @@
+This is a continuous integration project that I like to play around with. Currently it uses Travis CI
+ to spin up python scripts in Docker containers. 
